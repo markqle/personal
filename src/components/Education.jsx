@@ -15,22 +15,22 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
+      degree: "Masters in Data Science (MSIS)",
+      school: "California State University, Long Beach",
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      year: "2024-2026",
+      achievements: ["GPA: 4.0", "Subject: Data Science"],
+      skills: ["Database", "Machine Learning", "System Design", "Python"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Focused on data science and system management subjects with emphasis on practical lab work and machine learning models.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
+      degree: "Bachelor of Art in Economics",
+      school: "University of British Columbia",
       mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      year: "2017-2021",
+      achievements: ["GPA: 3.5", "Subject: Economics"],
+      skills: ["SPSS", "Research", "Economics", "Statistics"],
       description:
         "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
     },
@@ -73,7 +73,7 @@ const EducationSection = () => {
             Educational Journey
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Discover how academic excellence shapes innovative thinking and
+            Discover how academic shapes my thinking and
             professional growth.
           </p>
         </motion.div>

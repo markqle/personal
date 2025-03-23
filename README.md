@@ -1,13 +1,3 @@
-
-## Version 2  
-
-> ![image](https://github.com/user-attachments/assets/ce36e52b-96c2-4b72-a1e8-1e68b9767f6c)  
->  
-> 🔗 [View on GitHub](https://github.com/seraprogrammer/portfolio-v2)
-> 🔗 [v2 Portfolio](https://codervai2.vercel.app)
-
-
-
 # Portfolio Website
 <div align="center">
   <pre>
@@ -25,16 +15,10 @@ Welcome to my **portfolio website**! This site showcases my skills, experience, 
 
 ---
 
-## Demo
-
-![Portfolio Demo](https://i.postimg.cc/Dfr5jCQp/Screenshot-2025-01-02-120901.png)
-
----
-
 ## Live Preview
 
 Check out the live preview of the portfolio website here:  
-[**Live Demo**](https://codervai.vercel.app/)
+[**Live Demo**](https://markqle.github.io)
 ---
 ### 🎯 Project Structure
 ```bash
@@ -140,7 +124,7 @@ You will need to download **Git** and **Node** to run this project.
 2. After forking, open your terminal and run the following commands to clone the repo:
 
   ```bash
-  git clone https://github.com/seraprogrammer/portfolio.git
+  git clone https://github.com/markqle/portfolio.git
   ```
 Navigate to the Project Directory 📂
 Once the repository is cloned, change your directory to the project folder:
@@ -178,5 +162,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-<div align="center"> Made with ❤️ by Nazmul Hossain </div>
+<div align="center"> Made by Mark Le (inspired by Nazmul Hossain) </div>
 
