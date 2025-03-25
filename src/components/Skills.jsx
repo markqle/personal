@@ -12,10 +12,11 @@ import {
   FaLinux,
   FaFigma,
   FaAws,
+  FaChartBar,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
-  SiTypescript,
+  SiApacheairflow,
   SiTailwindcss,
   SiPostgresql,
   SiMongodb,
@@ -26,11 +27,27 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
+  SiMysql,
+  SiTableau,
+  SiPandas,
+  SiNumpy,
+  SiApachespark,
+  SiScikitlearn,
+  SiTensorflow,
+  SiPytorch,
+  SiKeras,
+  SiN8N,
+  SiAlteryx,
+  SiLooker,
+  SiQlik,
+  SiHuggingface,
+  
 } from "react-icons/si";
-import { TbBrandVscode } from "react-icons/tb";
+import { TbBrandVscode, TbBrandDatabricks, TbBrandAzure } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
 import { MdAnimation } from "react-icons/md";
 import { FcWorkflow } from "react-icons/fc";
+import { PiOpenAiLogoLight } from "react-icons/pi";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
   <Card className="group relative overflow-hidden bg-gray-900/80 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
@@ -68,41 +85,42 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       icon: Code2,
-      title: "Frontend Development",
+      title: "Data Analytics",
       color: "text-blue-400",
       skills: [
-        { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
+        { 
+          name: "Power BI", icon: <FaChartBar className="w-4 h-4 text-[#f0c811]" /> },
         {
-          name: "Next.js",
-          icon: <SiNextdotjs className="w-4 h-4 text-white" />,
+          name: "Tableau",
+          icon: <SiTableau className="w-4 h-4 text-[#3178C6]" />,
         },
         {
-          name: "TypeScript",
-          icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" />,
+          name: "Pandas",
+          icon: <SiPandas className="w-4 h-4 text-[#38B2AC]" />,
         },
         {
-          name: "Tailwind CSS",
-          icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" />,
+          name: "Numpy",
+          icon: <SiNumpy className="w-4 h-4 text-[#4e76ce]" />,
         },
         {
-          name: "HTML5",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" />,
+          name: "Alteryx",
+          icon: <SiAlteryx className="w-4 h-4 text-[#0089bd]" />,
         },
         {
-          name: "CSS3",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" />,
+          name: "Looker",
+          icon: <SiLooker className="w-4 h-4 text-[#0089bd]" />,
+        },
+        {
+          name: "Qlik",
+          icon: <SiQlik className="w-4 h-4 text-[#009c4d]" />,
         },
       ],
     },
     {
       icon: Database,
-      title: "Backend Development",
+      title: "Data Engineering",
       color: "text-green-400",
       skills: [
-        {
-          name: "Node.js",
-          icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
-        },
         {
           name: "Python",
           icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
@@ -111,9 +129,24 @@ const SkillsSection = () => {
           name: "PostgreSQL",
           icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
         },
+        { 
+          name: "MySQL", icon: <SiMysql className="w-4 h-4 text-[#61DAFB]" /> },
+        {
+          name: "Databricks",
+          icon: <TbBrandDatabricks className="w-4 h-4 text-[#ef3b2a]" />,
+        },
         {
           name: "MongoDB",
           icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
+        },
+        
+        {
+          name: "Airflow",
+          icon: <SiApacheairflow className="w-4 h-4 text-blue" />,
+        },
+        {
+          name: "n8n",
+          icon: <SiN8N className="w-4 h-4 text-[#ea4b71]" />,
         },
         {
           name: "REST APIs",
@@ -121,27 +154,31 @@ const SkillsSection = () => {
         },
         {
           name: "GraphQL",
-          icon: <SiGraphql className="w-4 h-4 text-[#E10098]" />,
+          icon: <SiGraphql className="w-4 h-4 text-[#e435aa]" />,
         },
       ],
     },
     {
       icon: Layout,
-      title: "UI/UX Design",
+      title: "Machine Learning & AI",
       color: "text-purple-400",
       skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
+        { name: "scikit-learn", icon: <SiScikitlearn className="w-4 h-4 text-[#F24E1E]" /> },
         {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
+          name: "Spark",
+          icon: <SiApachespark className="w-4 h-4 text-[#FF6C37]" />,
         },
         {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
+          name: "TensorFlow",
+          icon: <SiTensorflow className="w-4 h-4 text-[#ff8500]" />,
         },
         {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
+          name: "Pytorch",
+          icon: <SiPytorch className="w-4 h-4 text-[#ee4c2c]" />,
+        },
+        {
+          name: "Keras",
+          icon: <SiKeras className="w-4 h-4 text-[#d00000]" />,
         },
       ],
     },
@@ -152,14 +189,15 @@ const SkillsSection = () => {
       skills: [
         { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
         {
+          name: "Azure",
+          icon: <TbBrandAzure className="w-4 h-4 text-[#326CE5]" />,
+        },
+        {
           name: "Docker",
           icon: <FaDocker className="w-4 h-4 text-[#2496ED]" />,
         },
         { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
-        {
-          name: "Kubernetes",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" />,
-        },
+        
         { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
         { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
       ],
@@ -173,43 +211,37 @@ const SkillsSection = () => {
           name: "VS Code",
           icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />,
         },
-        { name: "Jest", icon: <SiJest className="w-4 h-4 text-[#C21325]" /> },
-        {
-          name: "Webpack",
-          icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" />,
-        },
-        { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
         {
           name: "Firebase",
           icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" />,
         },
-        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-        { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
+        { name: "OpenAI", icon: <PiOpenAiLogoLight className="w-4 h-4 text-white" /> },
+        { name: "Hugging Face", icon: <SiHuggingface className="w-4 h-4 text-[#ffd21d]" /> },
       ],
     },
-    {
-      icon: Paintbrush,
-      title: "Creative Skills",
-      color: "text-yellow-400",
-      skills: [
-        {
-          name: "UI Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
-        },
-        {
-          name: "SVG Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
-        },
-        {
-          name: "3D Modeling",
-          icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
-        },
-        {
-          name: "Motion Graphics",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
-        },
-      ],
-    },
+    // {
+    //   icon: Paintbrush,
+    //   title: "Creative Skills",
+    //   color: "text-yellow-400",
+    //   skills: [
+    //     {
+    //       name: "UI Animation",
+    //       icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
+    //     },
+    //     {
+    //       name: "SVG Animation",
+    //       icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
+    //     },
+    //     {
+    //       name: "3D Modeling",
+    //       icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
+    //     },
+    //     {
+    //       name: "Motion Graphics",
+    //       icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
+    //     },
+    //   ],
+    // },
   ];
 
   return (
