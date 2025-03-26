@@ -61,8 +61,9 @@ const profile = {
     title: 'Data Analyst | Data Engineer | Machine Learning Enthusiast',
     skills: [
         'MySQL', 'Python', 'Tableau', 'Power BI', 'scikit-learn',
-        'Postgre SQL', 'MongoDB', 'AWS', 'Azure', 'Docker',
-        'Databricks', 'Aiflow', 'Kafka', 'Spark', 'Django'
+        'Postgre SQL', 'MongoDB', 'AWS', 'Azure', 'Docker', 
+        'Databricks', 'Aiflow', 'Kafka', 'Spark', 'Flask', 'Django', 
+        'ReactJS', 'NodeJS', 'JavaScript', 'HTML', 'CSS'
     ],
     hardWorker: true,
     quickLearner: true,
