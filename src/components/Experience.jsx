@@ -55,27 +55,35 @@ const ExperienceSection = () => {
   const experiences = [
     {
       icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
+      title: "Data Management Assistant",
+      company: "CSU Long Beach",
+      period: "02/2025 - Present",
       description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
+        "Managed the migration of an MS Access database to MySQL, enhancing performance, security, and scalability. Maintained a MySQL database with 45K+ student records at 99% accuracy, developed a Python automation script to boost productivity by 50%, and leveraged data analysis tools to drive efficiency and data-driven decision-making.",
     },
     {
       icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
-      period: "2021 - 2023",
+      title: "Data Analyst",
+      company: "GeoComply",
+      period: "02/2023 - 08/2024",
       description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+        "Developed API utilization metrics and automated alerts in Python using Airflow, reducing human error and improving daily operations by 15%. Built data pipelines with Python, Kibana, and Airflow to enrich 3 million data points, conducted fraud detection analyses on 100M+ records in Databricks, and ensured data integrity with proactive Jenkins monitoring, achieving near 0% downtime.",
     },
     {
       icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
-      period: "2023 - Present",
+      title: "Jr. Data Analyst",
+      company: "LF Global Tech Inc.",
+      period: "09/2021 - 12/2022",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Developed interactive Power BI dashboards to enhance market research in North America, Brazil, and Mexico, increasing actionable insights by 25% and improving decision-making efficiency. Cleaned and analyzed 500,000 data points using Python, conducted statistical analysis, and assisted the System Analyst team with data modeling and UML design.",
+    },
+    {
+      icon: Cpu,
+      title: "Business Intelligence Intern",
+      company: "EMC ",
+      period: "10/2020 - 04/2021",
+      description:
+        "Utilized internal customer review data with MySQL and SWOT analysis to identify product improvement opportunities and uncover competitive insights. Collaborated with business partners to enhance integrated marketing and financial strategies for digital transformation.",
     },
   ];
 
