@@ -1,6 +1,6 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
-import olova from "../assets/images/olova.png";
+import adfraud from "../assets/images/adfraud.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const MacOsButtons = () => (
@@ -14,15 +14,15 @@ const MacOsButtons = () => (
 const ProjectShowcase = () => {
   const projects = [
     {
-      title: "Olova! A Lightweight JavaScript Library",
+      title: "AdFraudGuard-ML model",
       description:
-        "Olova.js is a lightweight JavaScript library for building modern, reactive, and dynamic web applications. It features a simple, component-based architecture, enabling developers to create reusable and interactive UI elements with minimal code and overhead.",
-      tags: ["JavaScript", "Reactive", "Web Development"],
+        "The AdFraudGuard-ML project aims to develop a robust machine learning model to detect attribution fraud in mobile app marketing. By identifying fraudulent installs and clicks and locating their sources, the model will empower advertisers to take timely and informed actions to minimize losses and optimize their advertising strategies. By flagging high-risk IP addresses and devices that generate excessive clicks but fail to convert into installs, the platform will be able to develop more effective IP blocklists and device blacklists. This will not only save costs but also restore confidence in mobile advertising campaigns.",
+      tags: ["Random Forest", "XGBoost", "Machine Learning"],
       links: {
-        github: "https://github.com/olovajs/olova",
-        demo: "https://olova.js.org/",
+        github: "https://github.com/markqle/TalkingData-AdFraud-Machine-Learning/",
+        demo: "https://github.com/markqle/TalkingData-AdFraud-Machine-Learning/",
       },
-      image: olova,
+      image: adfraud,
       featured: true,
     },
   ];
@@ -100,8 +100,38 @@ const ProjectShowcase = () => {
             </Card>
           </div>
         ))}
+        <div className="flex items-center justify-center">
+          <div className="flex items-center flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
+            <a
+              href="https://github.com/markqle"
+              className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
+              target="_blank"
+            >
+              <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
+                <span className="relative flex items-center justify-center gap-2 text-white font-medium">
+                  <span>More Projects</span>
+                  <i className="fas fa-arrow-right transform transition-all duration-300 group-hover:translate-x-1"></i>
+                </span>
+              </span>
+
+            </a>
+            <a
+              href="/public/MarkLe_Resume.pdf"
+              className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
+              target="_blank"
+            >
+              <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">
+                <span className="relative flex items-center justify-center gap-2 text-gray-300 font-medium group-hover:text-white">
+                  <span>Get Resume</span>
+                  <i className="fas fa-envelope transform transition-all duration-300 group-hover:rotate-12"></i>
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </div >
   );
 };
 
